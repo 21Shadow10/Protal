@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+*{
+    font: 'Noto Serif', serif;
+    font-weight: bold;
+    margin: 0.2rem ;
+    padding: 0.1rem;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+td{
+    display: table-cell;
+}
+
+.half{
+    width: 15rem ;
+}
+
+.large{
+    width: 100% ;
+}
+
+input, textarea{
+    height: 1.5em;
+    background-color: white;
+    border: 1px solid white ;
+    box-shadow: white;
+    border-radius: 8px;
+}
+
+input[type="submit"]{
+    width: 31rem ;
+    height: 3rem ;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #f0e130;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: white;
+}
+
+textarea{
+    height: 100px;
+}
+
+/*@media screen and (max-width: 960px) {
+    .large{
+        width: 50% ;
+    }
+    .half{
+        width: 7.5rem;
+    }
+    .half2{
+        width: 2rem;
+    }
+}*/
+
+

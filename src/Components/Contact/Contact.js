@@ -1,5 +1,4 @@
 import React from 'react' ;
-import ReactDOM from 'react-dom' ;
 import './Contact.css' ;
 
 class Contact extends React.Component{
@@ -10,19 +9,19 @@ class Contact extends React.Component{
                     <table>
                         <tbody>
                         <tr>
-                            <td>
+                            <td className="half2">
                                 <label htmlFor="fname">First Name *</label>
                             </td>
-                            <td>
+                            <td className="half2">
                                 <label htmlFor="lname">Last Name *</label>
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input name="fname" type="text"></input>
+                                <input name="fname" type="text" className="half"></input>
                             </td>
                             <td>
-                                <input name="lname" type="text"></input>
+                                <input name="lname" type="text" className="half"></input>
                             </td>
                         </tr>
                         <tr>
@@ -53,6 +52,17 @@ class Contact extends React.Component{
                         <tr>
                             <td colSpan={2}>
                                 <textarea className="large" name="message" rows="40"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colSpan={2}>
+                                <input type="checkbox" name="ack"></input>
+                                <label htmlFor="ack">I agree to recieve email communications from Protal</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colSpan={2}>
+                                <input type="submit" value="Submit"></input>
                             </td>
                         </tr>
                         </tbody>
