@@ -1,0 +1,14 @@
+.container{
+    max-width: 800px;
+    background: #fff;
+    width: 800px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+
+  @media (max-width: 700px) {
+      .container{
+          max-width: 360px;
+          width: 300px;
+      }
+  }

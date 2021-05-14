@@ -4,71 +4,51 @@ import './Contact.css' ;
 class Contact extends React.Component{
     render(){
         return (
-            <div className='form'>
-                <form>
-                    <table>
-                        <tbody>
-                        <tr>
-                            <td className="half2">
-                                <label htmlFor="fname">First Name *</label>
-                            </td>
-                            <td className="half2">
-                                <label htmlFor="lname">Last Name *</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input name="fname" type="text" className="half"></input>
-                            </td>
-                            <td>
-                                <input name="lname" type="text" className="half"></input>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label htmlFor="mail">Email *</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colSpan={2}>
-                                <input className = "large" type="email" name="mail"></input>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label htmlFor="phone">Phone Number *</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colSpan={2}>
-                                <input className="large" type="tel" name="phone"></input>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <label htmlFor="message">Message (if any)</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colSpan={2}>
-                                <textarea className="large" name="message" rows="40"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colSpan={2}>
-                                <input type="checkbox" name="ack"></input>
-                                <label htmlFor="ack">I agree to recieve email communications from Protal</label>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colSpan={2}>
-                                <input type="submit" value="Submit"></input>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </form>
+            <div class="container">
+                <div class="text">
+                    Contact Us
+                 </div>
+      <form action="#">
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required />
+               <label for="">First Name *</label>
             </div>
+            <div class="input-data">
+               <input type="text" required />
+               <div class="underline"></div>
+               <label for="">Last Name *</label>
+            </div>
+         </div>
+         <div class="form-row">
+            <div class="input-data">
+               <input type="text" required />
+               <div class="underline"></div>
+               <label for="">Email Address *</label>
+            </div>
+            <div class="input-data">
+               <input type="text" required />
+               <div class="underline"></div>
+               <label for="">Phone Number *</label>
+            </div>
+         </div>
+         <div class="form-row">
+         <div class="input-data textarea">
+            <textarea rows="8" cols="80" required></textarea>
+            <br />
+            <div class="underline"></div>
+            <label for="">Message (if any)</label>
+            <br />
+            <div class="form-row submit-btn">
+               <div class="input-data">
+                  <div class="inner"></div>
+                  <input type="submit" value="submit" />
+               </div>
+            </div>
+            </div>
+            </div>
+      </form>
+      </div>
         )
     }
 }
