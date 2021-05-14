@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class About extends Component {
     render(){
         return <div className="container">
-            <h1>About</h1>
+            <h1>About US</h1>
             <p>Protal is a Talent Producing Social Media platform for the easy showcasing of talents. 
                 We aim at building a talent network, connecting people with various talents to the 
                 right recruiters and opportunities.</p>
